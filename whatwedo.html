@@ -120,7 +120,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-sm-12 col-lg-3 col-md-6" id="line1">
+                    <div class="col-sm-12 col-lg-3 col-md-6" onclick="myFunction()">
                         <div class="iq-fancy-box iq-fancy-wedo text-center">
                             <div class="icon-bg text-center">
                                 <img src="images/services/icon1-01.png" class="img-fluid img-wedo" alt="#">
@@ -130,7 +130,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-12 col-lg-3 col-md-6 r4-mt-30" id="line2">
+                    <div class="col-sm-12 col-lg-3 col-md-6 r4-mt-30" onclick="myFunction2()">
                         <div class="iq-fancy-box iq-fancy-wedo text-center">
                             <div class="icon-bg text-center">
                                 <img src="images/services/icon2-01-01.png" class="img-fluid img-wedo" alt="#">
@@ -140,7 +140,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-12 col-lg-3 col-md-6 r-mt-30" id="line3">
+                    <div class="col-sm-12 col-lg-3 col-md-6 r-mt-30" onclick="myFunction3()">
                         <div class="iq-fancy-box iq-fancy-wedo text-center">
                             <div class="icon-bg text-center">
                                 <img src="images/services/icon3-01.png" class="img-fluid img-wedo" alt="#">
@@ -150,7 +150,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-12 col-lg-3 col-md-6 r-mt-30" id="line4">
+                    <div class="col-sm-12 col-lg-3 col-md-6 r-mt-30" onclick="myFunction4()">
                         <div class="iq-fancy-box iq-fancy-wedo text-center">
                             <div class="icon-bg text-center">
                                 <img src="images/services/icon4-01-01.png" class="img-fluid img-wedo" alt="#">
@@ -161,7 +161,7 @@
                         </div>
 
                     </div>
-                    <div class="col-sm-12 blocktext">
+                    <div class="col-sm-12" id="panel">
                         <div class="heading-wedo">
                             <p class="iq-font-15 para">Pravaha sees education as the vital component that spurs social
                                 growth, and catalyzes individual
@@ -180,7 +180,7 @@
                                 and talented children.</p>
                         </div>
                     </div>
-                    <div class="col-sm-12 blocktext2">
+                    <div class="col-sm-12" id="panel2">
                         <div class="heading-wedo">
                             <p class="iq-font-15 para">Pravaha recognizes existing challenges that healthcare systems
                                 have to face in order to deal with
@@ -200,7 +200,7 @@
                                 rational use of technology in healthcare.</p>
                         </div>
                     </div>
-                    <div class="col-sm-12 blocktext3">
+                    <div class="col-sm-12" id="panel3">
                         <div class="heading-wedo">
                             <p class="iq-font-15 para">The lack of basic sanitation facilities and water problems in
                                 both rural and urban areas in India
@@ -219,7 +219,7 @@
                                 emphasize socio-political comprehension, acceptance, and support.</p>
                         </div>
                     </div>
-                    <div class="col-sm-12 blocktext4">
+                    <div class="col-sm-12" id="panel4">
                         <div class="heading-wedo">
                             <p class="iq-font-15 para">Pravaha believes that sports can be utilized as a means for
                                 inspiring far reaching social
@@ -271,8 +271,8 @@
                         <ul class="info-share" style="text-align: center;">
                             <li><a href="javascript:void(0)"><i class="fa fa-twitter"></i></a></li>
                             <li><a href="javascript:void(0)"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="javascript:void(0)"><i class="fa fa-instagram"></i></a></li>
-                            <li><a href="javascript:void(0)"><i class="fa fa-youtube"></i></a></li>
+                            <li><a href="javascript:void(0)"><i class="fa fa-linkedin"></i></a></li>
+                            <!-- <li><a href="javascript:void(0)"><i class="fa fa-youtube"></i></a></li> -->
                         </ul>
                     </div>
                 </div>
@@ -308,6 +308,39 @@
             alert("Thank you for sharing your message")
         }
     </script>
+    <script>
+        function myFunction() {
+            document.getElementById("panel").style.display = "block";
+            document.getElementById("panel2").style.display= "none";
+            document.getElementById("panel3").style.display= "none";
+            document.getElementById("panel4").style.display= "none";
+
+
+        }
+
+        function myFunction2() {
+            document.getElementById("panel2").style.display = "block";
+            document.getElementById("panel").style.display= "none";
+            document.getElementById("panel3").style.display= "none";
+            document.getElementById("panel4").style.display= "none";
+
+        }
+        function myFunction3() {
+            document.getElementById("panel2").style.display = "none";
+            document.getElementById("panel").style.display= "none";
+            document.getElementById("panel3").style.display= "block";
+            document.getElementById("panel4").style.display= "none";
+
+        }
+        function myFunction4() {
+            document.getElementById("panel2").style.display = "none";
+            document.getElementById("panel").style.display= "none";
+            document.getElementById("panel3").style.display= "none";
+            document.getElementById("panel4").style.display= "block";
+
+        }
+    </script>
+   
 </body>
 
 </html>
